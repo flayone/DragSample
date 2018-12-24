@@ -39,7 +39,8 @@ interface OnDraggableClickListener {
     fun onClick(v: View)
 }
 
-fun initDragLayout(view: View,heightPercent :Double = (2 / 3).toDouble()) {
+//初始化拖拽布局方法，重新layout位置
+fun initDragLayout(view: View, heightPercent: Double = (2 / 3).toDouble()) {
     view.run {
         val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
         val statusHeight = resources.getDimensionPixelSize(resourceId)
